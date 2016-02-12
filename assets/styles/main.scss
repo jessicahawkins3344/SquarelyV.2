@@ -1,0 +1,168 @@
+$icon-font-path: '../fonts/';
+
+@import "components/variables.scss";
+
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+@import "../../bower_components/weather-icons/sass/weather-icons.scss";
+// endbower
+
+@import "components/md-pallet.scss";
+@import "components/style-library.scss";
+@import "components/utilities.scss";
+@import "components/buttons.scss";
+@import "components/forms.scss";
+@import "components/pagination";
+@import "components/list-group.scss";
+@import "components/icon-buttons.scss";
+@import "components/card.scss";
+@import "components/labels.scss";
+@import "components/icons.scss";
+@import "components/grid.scss";
+@import "components/wp-classes.scss";
+@import "components/squarely.scss";
+@import "components/nav-tabs.scss";
+@import "components/navbar.scss";
+@import "components/color-filter.scss";
+@import "components/typography.scss";
+@import "components/others.scss";
+@import "components/accordion.scss";
+@import "components/feature-box.scss";
+@import "components/pricing-tables.scss";
+
+@import "layouts/header.scss";
+@import "layouts/sidebar.scss";
+@import "layouts/footer.scss";
+@import "layouts/pages.scss";
+@import "layouts/posts.scss";
+@import "layouts/tinymce.scss";
+
+body {
+  font-size: $font-size-base;
+}
+
+a {
+  -webkit-transition: color .25s ease-in; /*safari and chrome */
+ -moz-transition: color .25s ease-in; /* firefox */
+ -o-transition: color .25s ease-in; /* opera */
+}
+
+.donut-inner {
+   margin-top: -100px;
+   margin-bottom: 100px;
+}
+.donut-inner h5 {
+   margin-bottom: 5px;
+   margin-top: 0;
+}
+
+section.widget {
+  padding: 2em 2em !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.overlay-container {
+	position: relative;
+    overflow: hidden;
+    height: 250px;
+    position: relative;
+}
+
+.overlay-container:hover {
+  opacity: .8;
+}
+
+.overlay-container .overlay {
+    position: relative;
+    width: 251px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+
+.overlay-container:hover .overlay {
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 1;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    vertical-align: middle;
+
+}
+
+.overlay-container .overlay>i {
+  margin: 0;
+}
+
+.resources.isotope-item .card {
+  color: $brand-success !important;
+}
+
+.uncategorized.isotope-item .card {
+  color: $brand-info !important;
+}
+
+.snippets.isotope-item .card {
+  color: $brand-warning !important;
+}
+
+#filters li.nav-item {
+  margin-right: 10px;
+}
+
+.featured {
+    min-height: 188px;
+    margin: 20px auto;
+}
+
+.featured-item {
+  border-radius: .25em;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.featured-image.img-thumbnail {
+  width: 150px;
+    float: left;
+    margin-left: -.9375rem;
+}
+
+.featured-content {
+  padding: 20px;
+}
+
+.main-card.card-img-overlay {
+  top: 82%;
+  background: $brand-primary;
+  overflow: hidden;
+}
+
+.circle {
+  display: inline-block;
+}
+
+.circles-text {
+  font-size: 32px !important;
+}
+
+.user-image {
+  margin: 0 auto;
+}

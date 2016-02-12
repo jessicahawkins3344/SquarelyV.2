@@ -1,0 +1,43 @@
+// Labels
+
+@mixin label-outline($color) {
+  color: $color;
+  border-color: $color;
+  background-image: none;
+  border: 2px solid;
+
+  &[href] {
+    @include hover-focus {
+      border-color: darken($color, 10%);
+      color: darken($color, 10%);
+    }
+  }
+}
+
+// Colors
+//
+// Contextual variations (linked labels get darker on :hover).
+
+.label-default-outline {
+  @include label-outline($label-default-bg);
+}
+
+.label-primary-outline {
+  @include label-outline($label-primary-bg);
+}
+
+.label-success-outline {
+  @include label-outline($label-success-bg);
+}
+
+.label-info-outline {
+  @include label-outline($label-info-bg);
+}
+
+.label-warning-outline {
+  @include label-outline($label-warning-bg);
+}
+
+.label-danger-outline {
+  @include label-outline($label-danger-bg);
+}

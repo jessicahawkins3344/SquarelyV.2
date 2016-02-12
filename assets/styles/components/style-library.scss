@@ -1,0 +1,364 @@
+/* --------------------------------------------------------
+    Colors
+-----------------------------------------------------------*/
+.color-block {
+    height: 100px;
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 25px;
+}
+
+.color-block span {
+    display: block;
+}
+
+.color-block .color {
+    text-transform: uppercase;
+}
+
+.color-block .code {
+    margin: 5px 0;
+}
+
+.color-block .less {
+    font-size: 11px;
+}
+
+
+/* --------------------------------------------------------
+    Generic
+-----------------------------------------------------------*/
+
+.bg-transparent {
+  background-color: transparent!important;
+}
+
+.bg-inverse {
+  color: #fff;
+
+  a,
+  a:focus,
+  a:hover {
+    color: #fff;
+  }
+}
+
+.bg-inverse-custom {
+  margin-top: 1.1875rem;
+  background-color: transparent;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-primary {
+  color: $gray-dark;
+	background: $brand-primary;
+}
+
+.primary-bg {
+  color: $gray-dark;
+  background: $brand-primary;
+}
+
+.br-primary {
+  border-bottom: 5px solid $brand-primary;
+}
+
+.secondary-bg {
+  color: $gray-dark;
+  background: $brand-secondary;
+}
+
+.c-secondary {
+  color: $brand-secondary;
+}
+
+.action-bg {
+  background: $brand-action;
+}
+
+.c-action {
+  color: $brand-action;
+}
+
+.bg-success {
+	background: $brand-success;
+}
+
+.success-bg {
+  background: $brand-success;
+}
+
+.c-success {
+  color: $brand-success;
+}
+
+.br-success {
+  border-bottom: 5px solid $brand-success;
+}
+
+.bg-info {
+	background: $brand-info;
+}
+
+.info-bg {
+  background: $brand-info;
+}
+
+.c-info {
+  color: $brand-info;
+}
+
+.br-info {
+  border-bottom: 5px solid $brand-info;
+}
+
+.bg-danger {
+	background: $brand-danger;
+}
+
+.br-danger {
+  border-bottom: 5px solid $brand-danger;
+}
+
+.c-danger {
+  color: $brand-danger;
+}
+
+.bg-warning {
+	background: $brand-warning;
+}
+
+.br-warning {
+  border-bottom: 5px solid $brand-warning;
+}
+
+.c-warning {
+  color: $brand-warning;
+}
+
+.bg-default {
+	background: $gray-lightest;
+}
+
+.br-default {
+  border-bottom: 5px solid $gray-lightest;
+}
+
+.bg-gray {
+  background: $gray-darker;
+}
+
+.br-gray {
+  border-bottom: 5px solid $gray-dark;
+}
+
+.c-gray {
+    color: $gray-dark;
+}
+
+.bg-white {
+  background: $md-white;
+}
+
+/* --------------------------------------------------------
+    Generic
+-----------------------------------------------------------*/
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-black {
+    background-color: $md-black;
+}
+
+.bg-white {
+    background-color: $md-white;
+}
+
+.c-white {
+    color: $md-white !important;
+}
+
+.bg-brown {
+    background-color: $md-brown-500;
+}
+
+.c-brown {
+    color: $md-brown-500;
+}
+
+.bg-pink {
+    background-color: $md-pink-500;
+}
+
+.c-pink {
+    color: $md-pink-500;
+}
+
+.bg-red {
+    background-color: $md-red-500;
+}
+
+.c-red {
+    color: $md-red-500;
+}
+
+.bg-blue {
+    background-color: $md-blue-500;
+}
+
+.c-blue {
+    color: $md-blue-500;
+}
+
+.bg-purple {
+    background-color: $md-purple-500;
+}
+
+.c-purple {
+    color: $md-purple-500;
+}
+
+.bg-deep-purple {
+    background-color: $md-deep-purple-500;
+}
+
+.c-deep-purple {
+    color: $md-deep-purple-500;
+}
+
+.bg-light-blue {
+    background-color: $md-light-blue-500;
+}
+
+.c-light-blue {
+    color: $md-light-blue-500;
+}
+
+.bg-cyan {
+    background-color: $md-cyan-500;
+}
+
+.c-cyan {
+    color: $md-cyan-500;
+}
+
+.bg-teal {
+    background-color: $md-teal-500;
+}
+
+.c-teal {
+    color: $md-teal-500;
+}
+
+.bg-green {
+    background-color: $md-green-500;
+}
+
+.c-green {
+    color: $md-green-500;
+}
+
+.bg-light-green {
+    background-color: $md-light-green-500;
+}
+
+.c-light-green {
+    color: $md-light-green-500;
+}
+
+.bg-lime {
+    background-color: $md-lime-500;
+}
+
+.c-lime {
+    color: $md-lime-500;
+}
+
+.bg-yellow {
+    background-color: $md-yellow-500;
+}
+
+.c-yellow {
+    color: $md-yellow-500;
+}
+
+.bg-amber {
+    background-color: $md-amber-500;
+}
+
+.c-amber {
+    color: $md-amber-500;
+}
+
+.bg-orange {
+    background-color: $md-orange-500;
+}
+
+.c-orange {
+    color: $md-orange-500;
+}
+
+.bg-deep-orange {
+    background-color: $md-deep-orange-500;
+}
+
+.c-deep-orange {
+    color: $md-deep-orange-500;
+}
+
+.bg-blue-grey {
+    background-color: $md-blue-grey-500;
+}
+
+.c-blue-grey {
+    color: $md-blue-grey-500;
+}
+
+.bg-indigo {
+    background-color: $md-indigo-500;
+}
+
+.c-indigo {
+    color: $md-indigo-500;
+}
+
+// Rules for sizing the weather icon.
+.wi.wi-18 { font-size: 18px; }
+.wi.wi-24 { font-size: 24px; }
+.wi.wi-36 { font-size: 36px; }
+.wi.wi-48 { font-size: 48px; }
+.wi.wi-60 { font-size: 60px; }
+
+// Rules for sizing the Material icon.
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+// Rules for using icons as black on a light background.
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+// Rules for using icons as white on a dark background.
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.icon-hi {
+    font-size: 120px;
+    font-color: $gray-dark;
+    line-height: 1.3em;
+    margin: 5px;
+}
+
+.icon-suc {
+    font-size: 120px;
+    color: $brand-success;
+    line-height: 1.3em;
+    margin: 5px;
+}

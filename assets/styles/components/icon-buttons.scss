@@ -1,0 +1,280 @@
+//
+// Icon Buttons - Circle
+// --------------------------------------------------
+
+// Base Styles Variables
+// -------------------------
+
+$icon-btn-width:                             60px;
+$icon-btn-font:                              floor($font-size-base * 1.6); // ~24px
+$icon-btn-height:                            $icon-btn-width;
+$icon-btn-border-radius:                     100%;
+$icon-btn-color:                             $white;
+$icon-btn-border:                            3px solid;
+
+
+// Icon Buttons Hg, Lg & Sm Variables
+// -------------------------
+
+$icon-btn-width-hg:                ceil($icon-btn-width * 2.75);  // ~120px
+$icon-btn-height-hg:               $icon-btn-width-hg;
+$icon-btn-line-height-hg:          ceil($icon-btn-width * 3);
+$icon-btn-font-hg:                 ceil($icon-btn-font * 3.25);  // ~60px
+
+$icon-btn-width-lg:                ceil($icon-btn-width * 1.75);  // ~78px
+$icon-btn-height-lg:               $icon-btn-width-lg;
+$icon-btn-line-height-lg:          115px;
+$icon-btn-font-lg:                 ceil($icon-btn-font * 2.25);  // ~36px
+
+$icon-btn-width-sm:                ceil($icon-btn-width * 0.6);  // ~36px
+$icon-btn-height-sm:               $icon-btn-width-sm;
+$icon-btn-line-height-sm:          $icon-btn-height-sm;
+$icon-btn-font-sm:                 floor($icon-btn-font * .6);  // ~14px
+
+
+// Icon Color Variables
+// -------------------------
+
+$icon-btn-default-bg:            $gray-light;
+$icon-btn-hover-bg:              mix($gray-light, white, 85%);
+$icon-btn-active-bg:             mix($gray-light, black, 85%);
+$icon-btn-default-border:        mix($gray-light, white, 95%);
+
+$icon-btn-primary-hover-bg:      mix($brand-primary, white, 75%);
+$icon-btn-primary-active-bg:     mix($brand-primary, black, 85%);
+$icon-btn-primary-border:        mix($brand-primary, black, 30%);
+
+$icon-btn-info-hover-bg:         mix($brand-info, white, 75%);
+$icon-btn-info-active-bg:        mix($brand-info, black, 85%);
+$icon-btn-info-border:           darken($brand-info, 95%);
+
+$icon-btn-success-hover-bg:      mix($brand-success, white, 75%);
+$icon-btn-success-active-bg:     mix($brand-success, black, 85%);
+$icon-btn-success-border:        darken($brand-success, 95%);
+
+$icon-btn-danger-hover-bg:       mix($brand-danger, white, 75%);
+$icon-btn-danger-active-bg:      mix($brand-danger, black, 85%);
+$icon-btn-danger-border:         darken($brand-danger, 95%);
+
+$icon-btn-warning-hover-bg:      mix($brand-warning, white, 75%);
+$icon-btn-warning-active-bg:     mix($brand-warning, black, 85%);
+$icon-btn-warning-border:        darken($brand-warning, 95%);
+
+$icon-btn-inverse-hover-bg:      mix($brand-secondary, white,75%);
+$icon-btn-inverse-active-bg:     mix($brand-secondary, black, 85%);
+$icon-btn-inverse-border:        darken($brand-secondary, 95%);
+
+
+// Icon Button Varaint Mixin
+// -------------------------
+
+@mixin icon-variant($color, $icon-btn-default-bg, $icon-btn-hover-bg, $icon-btn-active-bg, $icon-btn-default-border) {
+  color: $color;
+  background-color: $icon-btn-default-bg;
+  border-color: darken($icon-btn-default-border, 50%);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color;
+    background-color: $icon-btn-active-bg;
+    border-color: darken($icon-btn-primary-border, 5%);
+  }
+}
+
+.icon-btn-square {
+  border-radius: 10px!important;
+}
+
+// Icon Button Base Style
+// -------------------------
+
+[class*='icon-btn-'] {
+  border-radius: $icon-btn-border-radius;
+  margin: 10px;
+  height: $icon-btn-height;
+  width: $icon-btn-width;
+  font-size: $icon-btn-font;
+  line-height: $icon-btn-height;
+  text-align: center;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: 0.5s;
+  transition: 0.25s;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-radius: 10px!important;
+  }
+
+  &:after {
+    content: '';
+    box-sizing: content-box;
+  }
+
+}
+
+// Icon Button Sizes Mixin
+// -------------------------
+
+@mixin icon-size($width, $height, $line-height, $font-size) {
+  width: $width;
+  height: $height;
+  line-height: $line-height;
+  font-size: $font-size;
+}
+
+
+// Icon Button Base Style
+// -------------------------
+
+[class*='icon-btn-'] {
+  border-radius: $icon-btn-border-radius;
+  height: $icon-btn-height;
+  width: $icon-btn-width;
+  font-size: $icon-btn-font;
+  line-height: $icon-btn-height;
+  text-align: center;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: 0.5s;
+  transition: 0.25s;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-radius: 10px!important
+  }
+
+  &:after {
+    content: '';
+    box-sizing: content-box;
+  }
+
+}
+
+.btn-custom {
+  color: #bdc3c7;
+  font-size: 18px;
+  border: 1px solid #bdc3c7;
+}
+.btn-custom:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+
+// Icon Button Variants
+// -------------------------
+
+.icon-btn-default {
+  @include icon-variant($icon-btn-color, $icon-btn-default-bg, $icon-btn-hover-bg, $icon-btn-active-bg, $icon-btn-default-border);
+}
+.icon-btn-primary {
+  @include icon-variant($icon-btn-color, $brand-primary, $icon-btn-primary-hover-bg, $icon-btn-primary-active-bg, $icon-btn-primary-border);
+}
+.icon-btn-info    {
+  @include icon-variant($icon-btn-color, $brand-info, $icon-btn-info-hover-bg, $icon-btn-info-active-bg, $icon-btn-info-border);
+}
+.icon-btn-danger  {
+  @include icon-variant($icon-btn-color, $brand-danger, $icon-btn-danger-hover-bg, $icon-btn-danger-active-bg, $icon-btn-danger-border);
+}
+.icon-btn-success {
+  @include icon-variant($icon-btn-color, $brand-success, $icon-btn-success-hover-bg, $icon-btn-success-active-bg, $icon-btn-success-border);
+}
+.icon-btn-warning {
+  @include icon-variant($icon-btn-color, $brand-warning, $icon-btn-warning-hover-bg, $icon-btn-warning-active-bg, $icon-btn-warning-border);
+}
+.icon-btn-inverse {
+  @include icon-variant($icon-btn-color, $brand-secondary, $icon-btn-inverse-hover-bg, $icon-btn-inverse-active-bg, $icon-btn-inverse-border);
+}
+
+.icon-btn-trans {
+  background-color: transparent!important;
+  border: 2px solid;
+  border-color: darken($icon-btn-default-border, 50%);
+}
+
+.icon-btn-primary-outline {
+  background-color: transparent!important;
+  border: 3px solid;
+  border-color: $brand-primary;
+  border-width: 3px;
+  color: $brand-primary;
+}
+
+.icon-btn-success-outline {
+  background-color: transparent!important;
+  border: 3px solid;
+  border-color: $brand-success;
+  color: $brand-success;
+  border-width: 3px;
+}
+
+.icon-btn-info-outline {
+  background-color: transparent!important;
+  border: 3px solid;
+  border-color: $brand-info;
+  color: $brand-info;
+  border-width: 3px;
+}
+
+.icon-btn-warning-outline {
+  background-color: transparent!important;
+  border: 3px solid;
+  border-color: $brand-warning;
+  color: $brand-warning;
+  border-width: 3px;
+}
+
+.icon-btn-danger-outline {
+  background-color: transparent!important;
+  border: 3px solid;
+  border-color: $brand-danger;
+  color: $brand-danger;
+  border-width: 3px;
+}
+
+.icon-btn-secondary-outline {
+  background-color: transparent!important;
+  border: 3px solid;
+  border-color: $brand-secondary;
+  color: $brand-secondary;
+  border-width: 3px;
+}
+
+.icon-btn-white-outline {
+  background-color: transparent!important;
+  border: 3px solid;
+  border-color: $md-white;
+  color: $md-white;
+  border-width: 3px;
+}
+
+
+// Icon Button Sizes
+// Default size is definied by using a button variant only (class="icon-btn-primary"). Add one of these classes for additional sizes.
+// -------------------------
+.icon-btn-hg {
+  @include icon-size($icon-btn-width-hg, $icon-btn-height-hg, $icon-btn-line-height-hg, $icon-btn-font-hg);
+}
+
+.icon-btn-lg {
+  @include icon-size($icon-btn-width-lg, $icon-btn-height-lg, $icon-btn-line-height-lg, $icon-btn-font-lg);
+}
+
+.material-icons {
+  vertical-align: bottom!important;
+}
+
+@media (max-width: 1124px) {
+  .icon-btn-hg {
+    width: 100px!important;
+    height: 100px!important;
+    line-height: 110px!important;
+    font-size: 3em!important;
+  }
+}

@@ -1,0 +1,189 @@
+//BOXES
+//--------------------------------------------------------
+$box-border-color:  #f4f4f4;
+$box-border-radius: 3px;
+$box-footer-bg:     #fff;
+$box-boxshadow:     0 1px 1px rgba(0, 0, 0, .1);
+$box-padding:       10px;
+
+//Box variants
+$box-default-border-top-color: #d2d6de;
+
+.card {
+      border: none!important;
+      border-bottom: 5px solid $gray-lightest !important;
+      border-radius: 10px;
+      padding: 0px;
+      margin-bottom: 20px;
+}
+
+.card .list-group {
+  padding: 0px 30px 30px;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+}
+
+//User Card
+//-----------
+
+.card.user-card .card-header {
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    opacity: 1;
+    &:hover {
+      opacity: .2;
+
+  }
+}
+.card.user-card .card-header.user-one {
+      background: url("https://unsplash.it/2000/1333?image=865");
+      background-size: cover;
+      height: 175px;
+}
+.card.user-card .card-header.user-two {
+      background: url("https://unsplash.it/4608/3072?image=271");
+      background-size: cover;
+      height: 175px;
+
+}
+.card.user-card .card-header.user-three {
+      background: url("https://unsplash.it/5498/3615?image=299");
+      background-size: cover;
+      height: 175px;
+}
+
+.card.user-card .card-title {
+    >h3 {
+      margin: 10px!important;
+    }
+}
+
+.user-card > .user-image {
+  position: relative;
+  top: -70px;
+  margin-bottom: -70px;
+  text-align: center;
+  > img {
+     width: 125px;
+    height: 125px;
+    max-width: 175px;
+    max-height: 175px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.5);
+  }
+}
+
+.user-card {
+  .user-bottom {
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+/*
+ * Component: Social Widgets
+ * -------------------------
+ */
+//General widget style
+.card-widget {
+  position: relative;
+}
+
+//User Widget Style 1
+.widget-user {
+  //User name container
+  .widget-user-header {
+    padding: 20px;
+    height: 120px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+  //User name
+  .widget-user-username {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 300;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  }
+  //User single line description
+  .widget-user-desc {
+    margin-top: 0;
+  }
+  //User image container
+  .widget-user-image {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    margin-left: -45px;
+    > img {
+      width: 90px;
+      height: auto;
+      border: 3px solid #fff;
+    }
+  }
+  .box-footer {
+    padding-top: 30px;
+  }
+}
+
+//User Widget Style 2
+.widget-user-2 {
+  //User name container
+  .widget-user-header {
+    padding: 20px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+  //User name
+  .widget-user-username {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 300;
+  }
+  //User single line description
+  .widget-user-desc {
+    margin-top: 0;
+  }
+  .widget-user-username,
+  .widget-user-desc {
+    margin-left: 75px;
+  }
+  //User image container
+  .widget-user-image {
+    > img {
+      width: 65px;
+      height: auto;
+      float: left;
+    }
+  }
+}
+
+.card .nav-stacked>li {
+    border-bottom: 1px solid #f4f4f4;
+    margin: 0;
+}
+
+ul.list-unstyled.widget-2 li {
+  margin-top: .5em;
+  padding-bottom: .5em;
+  border-bottom: 1px solid #f4f4f4;
+  color: $brand-success;
+  font-weight: $fw-light;
+}

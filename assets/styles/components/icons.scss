@@ -1,0 +1,37 @@
+$icon-primary: $brand-primary;
+$icon-success: $brand-success;
+$icon-info: $brand-info;
+$icon-warning: $brand-warning;
+$icon-danger: $brand-danger;
+$icon-white: $white;
+
+.myicon {
+	padding: 5px 0px;
+	border-radius: 5px;
+}
+
+.icon-sm {
+	font-size: 25px;
+}
+
+.myicon.icon-primary {
+	color: $icon-primary;
+	border: 4px solid $brand-primary !important;
+}
+
+.myicon.icon-success {
+	color: $icon-success;
+	border: 4px solid $brand-success !important;
+}
+
+.icon-hg {
+	font-size: 80px;
+	padding: 10px;
+	line-height: .75em;
+}
+
+.icon-lg {
+	font-size: 50px;
+	padding: 10px;
+	line-height: .75em;
+}

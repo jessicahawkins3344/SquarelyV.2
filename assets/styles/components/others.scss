@@ -1,0 +1,86 @@
+.content-half {
+  position: relative;
+}
+.container-half {
+  position: absolute;
+  vertical-align: middle;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+}
+.container-half.pr30 {
+  width: calc(50% - 30px);
+}
+.container-half-left {
+  left: 0;
+  background-position: top right;
+}
+.container-half-right {
+  right: 0;
+  background-position: top left;
+}
+
+.content-info {
+  padding: 0px;
+  position: relative;
+}
+
+.content-info .image-container {
+  position: absolute;
+  height: 300px;
+  padding: 0px;
+  top: 0px;
+}
+
+.content-info .image-container .background-image-holder {
+  background: url('https://cldup.com/kE8v9sFdEo.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+.content-info .content {
+  margin-top: 300px;
+  padding: 40px;
+}
+
+.content-info h3 {
+  margin-bottom: 32px;
+}
+
+.content-info p {
+  margin-bottom: 20px;
+}
+
+/*  CONTENT BLOCK 3-10 MEDIA QUERIES
+/*----------------------------------------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  
+  .content-info .image-container {
+    height: 100%;
+  }
+  
+  .content-info .content {
+    margin-top: 0px;
+    padding: 80px 15px 80px 80px;
+  }
+  
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  
+  
+  
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  
+  
+  
+}

@@ -1,0 +1,112 @@
+//
+// Pricing Tables
+// --------------------------------------------------
+
+$pricing-border: 1px solid rgba(255,255,255,0.2);
+$pricing-2-border: 1px solid rgba(35,35,35,0.2);
+
+.pricing-table{ border-top: $pricing-border; border-left: $pricing-border; text-align: center; padding-bottom: 40px; }
+
+.pricing-table .price{ padding: 40px 0px; font-weight: 600; }
+.pricing-table .price .sub{ font-size: 16px; color: $brand-success; position: relative; bottom: 10px;  }
+.pricing-table .price .amount{ color: $gray-darker; font-size: 56px; display: inline-block; padding: 0px 8px; }
+
+.pricing-table .features{ margin: 40px 0px; }
+.pricing-table .features li{ min-height: 40px; color: $gray-darker; font-size: 16px; text-align: center; margin-bottom: 16px; }
+.pricing-table .features li:last-child{ margin-bottom: 0px; }
+.pricing-table .features li strong{ font-weight: 600; }
+
+.pricing-table.emphasis{ background-color: $brand-primary; }
+
+.pricing-2 .pricing-tables .col-md-3:first-child .pricing-table{ border-radius: $border-radius 0px 0px $border-radius;  }
+.pricing-2 .pricing-tables .col-md-3:last-child .pricing-table{ border-radius: 0px $border-radius $border-radius 0px; border-right: $pricing-2-border;  }
+
+.pricing-2 .pricing-table{ border-top: $pricing-2-border; border-bottom: $pricing-2-border; border-left: $pricing-2-border; text-align: center; padding-bottom: 40px; }
+.pricing-2 .pricing-table .features{ margin: 0px; }
+.pricing-2 .pricing-table .features li:first-child{ border-top: none; }
+.pricing-2 .pricing-table .features li{ border-top: $pricing-2-border; padding: 10px 0px; margin: 0; text-transform: uppercase; letter-spacing: .1rem; }
+
+.pricing-2 .pricing-table .features.feature-name li { font-size: 20px; }
+
+.pricing-2 .pricing-table .price{ border-top: $pricing-2-border; padding-bottom: 24px; border-bottom: none; }
+.pricing-2 .pricing-table .price .amount{ }
+.pricing-2 .pricing-table .price .sub{ opacity: 0.7; }
+
+.pricing-2 .pricing-table.emphasis{ background-color: $gray-dark }
+.pricing-2 .pricing-table.emphasis .features li{ color: #fff; background-color: $gray-dark !important; }
+.pricing-2 .pricing-table.emphasis .price .amount, .pricing-2 .pricing-table.emphasis .sub{ color: #fff; }
+
+.pricing-2 .feature-list{ background: $brand-warning; color: $gray-darker; padding-bottom: 0px; }
+.pricing-2 .pricing-table .features li:nth-child(even){  }
+
+li.feature-plan {
+	font-size: 24px!important;
+}
+
+.flex-price {
+	flex: 0 0 18.75%!important;
+}
+
+/* Pricing Table #2 */
+.pricing-two{
+	margin:30px 0px;
+}
+.pricing-two .table{
+	border-top: 1px solid #bbb;
+}		
+.pricing-two .table th,
+.pricing-two .table { 
+	text-align: center; 
+}
+.pricing-two .table th,
+.pricing-two .table td { 
+	padding: 10px; 
+	border: 1px solid #ddd;
+}
+.pricing-two .table th { 
+	font-size: 24px; 
+	font-weight: 800;
+	text-transform: uppercase;
+	font-family: $font-family-sans-serif!important;
+	border-bottom: 0;
+	letter-spacing: .1rem;
+}
+.pricing-two .table td:first-child{
+	padding-left: 20px;
+	text-align: left; 
+}
+
+.pricing-two .table td:third-child{
+	background: $gray-darker;
+} 
+.pricing-two tr td .ptable-title {
+	font-size: 14px;
+	font-weight:800;
+	color: $gray-darker;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	text-align: center;
+}
+.pricing-two tr td .ptable-title i { 
+	width: 23px;
+	line-height: 25px;
+	text-align: right;
+	margin-right: 5px;
+}
+.pricing-two .ptable-star {
+	position: relative;
+	display: block;
+	text-align: center;
+}
+.pricing-two .ptable-price {
+	display: block;
+}
+.pricing-two tr td { 
+	font-size: 14px; 
+	line-height:32px;
+}
+.pricing-two tr td .ptable-icon {
+	display: block;
+	margin-top: 5px;
+	font-size: 20px;
+}

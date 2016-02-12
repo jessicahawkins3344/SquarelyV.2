@@ -1,0 +1,18 @@
+// Grid system
+.main {
+  @include make-col();
+
+  @include media-breakpoint-up(sm) {
+    @include make-col-span($main-sm-columns);
+    .sidebar-primary & {
+      @include make-col-span($main-sm-columns - $sidebar-sm-columns);
+    }
+  }
+}
+.sidebar {
+  @include make-col();
+
+  @include media-breakpoint-up(sm) {
+    @include make-col-span($sidebar-sm-columns);
+  }
+}

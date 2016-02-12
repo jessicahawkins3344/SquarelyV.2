@@ -1,0 +1,60 @@
+.form-control {
+	border: none;
+}
+
+.form-control:focus {
+    background-color: $md-white;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 !important;
+    border: none;
+}
+
+.input-error .form-control {
+    background-color: $md-red-500;
+    color: $md-red-a100;
+    &:focus {
+    	background-color: $md-white !important;
+    	-webkit-box-shadow: none;
+	    box-shadow: none;
+	    outline: 0 !important;
+    }
+}
+
+.input-success .form-control {
+    background-color: $md-teal-500;
+    color: $md-teal-a100;
+    &:focus {
+    	background-color: $md-white !important;
+    	-webkit-box-shadow: none;
+	    box-shadow: none;
+	    outline: 0 !important;
+    }
+}
+
+.input-addon .form-control {
+    background-color: $md-yellow-300;
+    color: $gray-dark;
+    &:focus {
+    	background-color: $md-white !important;
+    	-webkit-box-shadow: none;
+	    box-shadow: none;
+	    outline: 0 !important;
+    }
+}
+
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+.search-form .search-field {
+  @extend .form-control;
+}
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-default;
+}
