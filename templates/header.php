@@ -11,7 +11,7 @@ $main_nav_options = array(
 ?>
 
 <?php if ( has_nav_menu( 'primary_navigation' ) ) : ?>
-  <nav class="site-header navbar navbar-custom bg-white navbar-fixed-top">
+  <header id="sticky" class="site-header navbar navbar-custom bg-white navbar-fixed-top">
     <div class="container-fluid" style="padding-right: 9%; padding-left:9%;">
         <button class="navbar-toggler hidden-md-up pull-xs-right c-primary" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-expanded="false">
             ☰
@@ -27,5 +27,5 @@ $main_nav_options = array(
           <?php } ?>
         </a>
     </div><!-- .container -->
-  </nav>
+  </header>
 <?php endif; ?>

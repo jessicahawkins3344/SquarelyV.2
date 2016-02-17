@@ -36,7 +36,7 @@ function customizer_library_squarely_options() {
 	$panel = 'header-navbar';
 	$panels[] = array(
 		'id' => $panel,
-		'title' => __( 'Header & Navbar', 'squarely' ),
+		'title' => __( 'Home Hero & Navbar', 'squarely' ),
 		'priority' => '0'
 	);
 
@@ -162,7 +162,7 @@ function customizer_library_squarely_options() {
 	$section = 'logo';
 	$sections[] = array(
 		'id' => $section,
-		'title' => __( 'Navbar', 'squarely' ),
+		'title' => __( 'Navbar Logo & Color', 'squarely' ),
 		'description' => __( 'Control your header\'s logo, colors, and link colors' , 'squarely' ), // @TODO Put a helper here
 		'priority' => '30',
 		'panel' => 'header-navbar'
@@ -171,9 +171,16 @@ function customizer_library_squarely_options() {
 	$section = 'header-options';
 	$sections[] = array(
 		'id' => $section,
-		'title' => __( 'Header Titles & Background', 'squarely' ),
-		'description' => __( 'Control your header\'s logo, layout, colors and font.' , 'squarely' ), // @TODO Put a helper here
+		'title' => __( 'Hero Text & Background', 'squarely' ),
 		'priority' => '40',
+		'panel' => 'header-navbar'
+	);
+
+	$section = 'header-buttons';
+	$sections[] = array(
+		'id' => $section,
+		'title' => __( 'Hero Buttons', 'squarely' ),
+		'priority' => '50',
 		'panel' => 'header-navbar'
 	);
 
@@ -182,7 +189,7 @@ function customizer_library_squarely_options() {
 		'id' => $section,
 		'title' => __( 'Additional Scripts', 'squarely' ),
 		'description' => __( 'Analytics Scripts & Custom Scripts' , 'squarely' ), // @TODO Put a helper here
-		'priority' => '40',
+		'priority' => '60',
 		'panel' => 'header-navbar'
 	);
 
@@ -195,8 +202,7 @@ function customizer_library_squarely_options() {
 		'label'   => __( 'Logo', 'squarely' ),
 		'section' => 'logo',
 		'type'    => 'image',
-		'default-image' => '',
-		'sanitize_callback' => 'esc_url_raw'
+		'default' => ''
 	);
 
 	$options['nav-background'] = array(
@@ -206,7 +212,6 @@ function customizer_library_squarely_options() {
 		'section' => 'logo',
 		'type'    => 'color',
 		'default' => '#fffff',
-		'sanitize_callback' => 'sanitize_hex_color'
 	);
 
 	$options['scripts-google'] = array(
@@ -235,44 +240,60 @@ function customizer_library_squarely_options() {
 		'label'   => __( 'Header Hero Image', 'squarely' ),
 		'section' => 'header-options',
 		'type'    => 'image',
-		'default-image' => '',
-		'sanitize_callback' => 'esc_url_raw'
+	);
+
+	$options['header-subtitle'] = array(
+		'id' => 'header-subtitle',
+		'label'   => __( 'Hero Small Subtitle', 'squarely' ),
+		'section' => 'header-options',
+		'type'    => 'text',
+		'default' => 'THANKS FOR SAYING HELLO TO'
 	);
 
 	$options['header-h1'] = array(
 		'id' => 'header-h1',
-		'label'   => __( 'Header H1 Title', 'squarely' ),
+		'label'   => __( 'Hero Header H1 Title', 'squarely' ),
 		'section' => 'header-options',
 		'type'    => 'text',
-		'default' => 'Lands.io, Open Source'
+		'default' => 'Squarely Wordpress Theme'
 	);
 
 		$options['header-h2'] = array(
 		'id' => 'header-h2',
-		'label'   => __( 'Header Sub Title', 'squarely' ),
+		'label'   => __( 'Hero Header Secondary H2 Title', 'squarely' ),
 		'section' => 'header-options',
 		'type'    => 'text',
 		'default' => 'Tailored-Made Development, Creative, Strategy & Management'
 	);
 
-	$options['header_btn_right'] = array(
-		'id' => 'header_btn_right',
-		'label'   => __( 'Right button URL', 'squarely' ),
-		'section' => 'header-options',
+			$options['btn-l-label'] = array(
+		'id' => 'btn-l-label',
+		'label'   => __( 'Hero Left Button Label', 'squarely' ),
+		'section' => 'header-buttons',
 		'type'    => 'text',
-		'priority' => 12,
-		'default' => '#primary',
-		'sanitize_callback' => 'esc_url_raw'
+		'default' => 'LEARN MORE'
 	);
 
-	$options['header_btn_left'] = array(
-		'id' => 'header_btn_left',
-		'label'   => __( 'Left button URL', 'squarely' ),
-		'section' => 'header-options',
+		$options['btn-l-url'] = array(
+		'id' => 'btn-l-url',
+		'label'   => __( 'Hero Left Button URL Input', 'squarely' ),
+		'section' => 'header-buttons',
+		'type'    => 'url'
+	);
+
+		$options['btn-r-label'] = array(
+		'id' => 'btn-r-label',
+		'label'   => __( 'Hero Right Button Label', 'squarely' ),
+		'section' => 'header-buttons',
 		'type'    => 'text',
-		'priority' => 13,
-		'default' => '#primary',
-		'sanitize_callback' => 'esc_url_raw'
+		'default' => 'OUR SERVICES'
+	);
+
+		$options['btn-r-url'] = array(
+		'id' => 'btn-r-url',
+		'label'   => __( 'Hero Right Button URL Input', 'squarely' ),
+		'section' => 'header-buttons',
+		'type'    => 'url'
 	);
 
 	/*/////////////////////////////////
@@ -303,7 +324,6 @@ function customizer_library_squarely_options() {
 		'section' => 'typography',
 		'type'    => 'color',
 		'default' => $c_gray,
-		'sanitize_callback' => 'sanitize_hex_color'
 	);
 
 	$options['body_background'] = array(
@@ -312,7 +332,6 @@ function customizer_library_squarely_options() {
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => '#fffff',
-		'sanitize_callback' => 'sanitize_hex_color'
 	);
 
 	$options['brand-primary'] = array(
@@ -322,7 +341,6 @@ function customizer_library_squarely_options() {
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_primary,
-		'sanitize_callback' => 'sanitize_hex_color'
 	);
 
 	$options['brand-primary-text'] = array(
@@ -332,7 +350,6 @@ function customizer_library_squarely_options() {
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_primary,
-		'sanitize_callback' => 'sanitize_hex_color'
 	);
 
 	$options['brand-secondary'] = array(
@@ -342,7 +359,6 @@ function customizer_library_squarely_options() {
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_secondary,
-		'sanitize_callback' => 'sanitize_hex_color'
 	);
 
 	$options['brand-secondary-text'] = array(
@@ -352,7 +368,6 @@ function customizer_library_squarely_options() {
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_secondary,
-		'sanitize_callback' => 'sanitize_hex_color'
 	);
 
 	$options['brand-success'] = array(
@@ -362,7 +377,6 @@ function customizer_library_squarely_options() {
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_success,
-		'sanitize_callback' => 'sanitize_hex_color'
 	);
 
 	$options['brand-success-text'] = array(
@@ -372,7 +386,6 @@ function customizer_library_squarely_options() {
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_success,
-		'sanitize_callback' => 'sanitize_hex_color'
 	);
 
 	$options['brand-info'] = array(
@@ -382,7 +395,6 @@ function customizer_library_squarely_options() {
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_info,
-		'sanitize_callback' => 'sanitize_hex_color'
 	);
 
 	$options['brand-info-text'] = array(
@@ -392,7 +404,6 @@ function customizer_library_squarely_options() {
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_info,
-		'sanitize_callback' => 'sanitize_hex_color'
 	);
 
 	

@@ -33,7 +33,6 @@ $squarely_includes = [
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions
   'lib/setup.php',     // Theme setup
-  'lib/custom_header.php',
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php' // Theme customizer
@@ -47,7 +46,7 @@ foreach ($squarely_includes as $file) {
 unset($file, $filepath);
 
 function bootstrap_four_nav_li_class( $classes, $item ) {
-  $classes[] .= ' nav-item-header' . ' nav-item' . ' nav-item-toggable ';
+  $classes[] .= ' nav-item-header' . ' nav-item';
   return $classes;
 }
 add_filter( 'nav_menu_css_class', 'bootstrap_four_nav_li_class', 10, 2 );

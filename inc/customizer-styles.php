@@ -38,7 +38,7 @@ function customizer_library_squarely_build_styles() {
 				'.icon-btn-primary',
 				'.fbox-icon i:hover',
 				'.fbox-icon i',
-				'br-primary'
+				'.br-primary'
 			),
 			'declarations' => array(
 				'background-color' => $color,
@@ -61,7 +61,8 @@ function customizer_library_squarely_build_styles() {
 				'.border-sm-primary',
 				'a',
 				'.nav-link',
-				'.social-icons'
+				'.social-icons',
+				'.navbar-brand'
 			),
 			'declarations' => array(
 				'color' => $color,
@@ -171,7 +172,7 @@ function customizer_library_squarely_build_styles() {
 				'.c-info',
 				'.text-info',
 				'.btn-info-outline',
-				'.incon-btn-info-outline',
+				'.icon-btn-info-outline',
 			),
 			'declarations' => array(
 				'color' => $color,

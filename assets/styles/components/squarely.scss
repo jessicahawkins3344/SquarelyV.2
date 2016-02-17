@@ -217,7 +217,7 @@ header.centered-text .btn:last-child{ margin-right: 0px; }
 // static
 
 .section-hero {
-  padding: 12% 5% 10% 5%!important;
+  padding: 11% 5% 11% 5%!important;
   background: url(http://smarkdev.com/wp-content/uploads/2016/01/hero12.jpg) no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
@@ -236,6 +236,11 @@ header.centered-text .btn:last-child{ margin-right: 0px; }
   a.jumbolink:hover,
   a.jumbolink:focus {
     opacity: 1;
+  }
+}
+@media (max-width: 724px) {
+  .section-hero {
+      padding: 25% 5%!important;
   }
 }
 
