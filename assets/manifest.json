@@ -27,11 +27,6 @@
     "ihover.css": {
       "bower": ["ihover"]
     },
-    "customizer.js": {
-      "files": [
-        "scripts/customizer.js"
-      ]
-    },
     "jquery.backstretch.js": {
       "bower": ["jquery-backstretch"]
     },

@@ -159,7 +159,6 @@ function assets() {
   }
 
   wp_enqueue_script('jquery', Assets\asset_path('scripts/jquery.js'), [], null, true);
-  wp_enqueue_script('customizer', Assets\asset_path('scripts/customizer.js'), [], null, true);
   wp_enqueue_script('modernizr', Assets\asset_path('scripts/modernizr.js'), [], null, true);
   wp_enqueue_script('squarely/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
