@@ -149,10 +149,18 @@ function customizer_library_squarely_options() {
 
 	$options['f-rss'] = array(
 		'id' => 'f-rss',
-		'label'   => __( 'YouTube URL', 'squarely' ),
-		'description' => __( 'Your YouTube Channel URL starting with "http://"...' , 'squarely' ), // @TODO Put a helper here
+		'label'   => __( 'RSS URL', 'squarely' ),
+		'description' => __( 'Your RSS URL starting with "http://"...' , 'squarely' ), // @TODO Put a helper here
 		'section' => 'footer',
 		'type'    => 'url',
+	);
+
+	$options['f-copyright'] = array(
+		'id' => 'f-copyright',
+		'label'   => __( 'Copyright Line', 'squarely' ),
+		'description' => __( 'The Footer Copyright Line' , 'squarely' ), // @TODO Put a helper here
+		'section' => 'footer',
+		'type'    => 'text'
 	);
 
 	/*/////////////////////////////////

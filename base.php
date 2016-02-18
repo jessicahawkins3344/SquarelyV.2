@@ -17,7 +17,7 @@ use Squarely\Wrapper;
       get_template_part('templates/header');
     ?>
 
-    <?php if (is_singular()) : ?>
+    <?php if (is_singular('post')) : ?>
       <div class="m-t-lg bg-default" style="position: relative; top: 2.3%;">
         <div class="container-fluid" style="padding: 3% 9%;">
           <div class="row">

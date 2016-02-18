@@ -2,8 +2,8 @@
 	<footer id="footer" class="social">
 	    <div class="container">
 	    	<div class="row">
-				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-					<ul class="list-inline social-icons">
+				<div class="col-md-12 text-center">
+					<ul class="list-inline social-icon-btns">
 						<li>
 							<a href="<?php echo esc_url( get_theme_mod( 'f-twitter' ) ) ;?>">
 								<i class="icon-social-twitter-outline"></i>
@@ -40,7 +40,13 @@
 							</a>
 						</li>
 					</ul><br>
-					<span class="sub">© Copright 2016 <a href="#">Smark<strong>Labs</a> - All Rights Reserved</span>
+					<span class="sub">
+					<?php if ( get_theme_mod( 'f-copyright', false ) ) {
+	            echo get_theme_mod("f-copyright");
+	          } else { 
+	            echo '© Copright 2016 JsquaredCreative - All Rights Reserved';
+	          } ?>
+					</span>
 				</div>
 			</div>
 	    </div>
