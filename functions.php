@@ -136,11 +136,3 @@ function squarely_recommend_plugin() {
     tgmpa( $plugins);
  
 }
-
-/**
- *
- * Codestar Framework
- * A Lightweight and easy-to-use WordPress Options Framework
- *
- */
-require_once get_template_directory() .'/inc/cs-framework/cs-framework.php';
