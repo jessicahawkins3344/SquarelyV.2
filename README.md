@@ -1,6 +1,4 @@
-# [Sage](https://roots.io/sage/)
-[![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
-[![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
+# [Squarely](http://squarely.smarkdev.com/)
 
 Squarely is a WordPress Bootstrap 4 Theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap 4 that was built off the fantastic Sage starter theme.
 
