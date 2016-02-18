@@ -4,7 +4,7 @@
 	    	<div class="row">
 				<div class="col-md-12 text-center">
 					<ul class="list-inline social-icon-btns">
-						<li>
+						<li style="margin-left: 40px;">
 							<a href="<?php echo esc_url( get_theme_mod( 'f-twitter' ) ) ;?>">
 								<i class="icon-social-twitter-outline"></i>
 							</a>

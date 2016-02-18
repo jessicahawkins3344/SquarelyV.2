@@ -71,6 +71,18 @@ img{ max-width: 100%; }
     border: none !important;
 }
 
+.widget > ul > li > a {
+  font-size: 16px!important;
+}
+
+.widget > ul > li > span > a {
+  font-size: 16px!important;
+}
+
+.widget {
+  font-size: 16px;
+}
+
 $standard-space: 80px;
 
 section{ padding-top: $standard-space; padding-bottom: $standard-space; position: relative; overflow: hidden; }
