@@ -6,3 +6,7 @@ footer.social .social-icon-btns li a{ font-size: 40px; opacity: 0.7;}
 footer.social .social-icon-btns li a:hover{ opacity: 1; }
 footer.social .sub{ opacity: 0.5; color: #fff; font-size: 12px; }
 footer.social .sub a{ color: #fff; font-weight: 600; }
+footer.social .social-icon-btns li {
+    margin-right: 40px;
+    display: inline-block;
+}
