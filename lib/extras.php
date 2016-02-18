@@ -24,6 +24,20 @@ function body_class($classes) {
 }
 add_filter('body_class', __NAMESPACE__ . '\\body_class');
 
+//* Customizer-Library
+if ( file_exists ( get_template_directory() . '/inc/customizer-library/customizer-library.php' ) ) :
+  // Helper library for the theme customizer.
+  require get_template_directory() . '/inc/customizer-library/customizer-library.php';
+  // Define custom setup for the theme customizer.
+  require get_template_directory() . '/inc/customizer-setup.php';
+else :
+  add_action( 'customizer-library-notices', 'squarely_customizer_library_notice' );
+endif;
+  
+function squarely_customizer_library_notice() {
+    _e( '<p>Notice: The "customizer-library" sub-module is not loaded.</p><p>Please add it to the "inc" directory: <a href="https://github.com/devinsays/customizer-library">https://github.com/devinsays/customizer-library</a>.</p><p>The squarely, including submodules, can also be installed via Git: "git clone --recursive git@github.com:devinsays/customizer-library-squarely".</p>', 'squarely' );
+}
+
 /**
  * Clean up the_excerpt()
  */

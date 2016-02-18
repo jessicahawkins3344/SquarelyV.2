@@ -10,24 +10,6 @@
  *
  */
 
-/**
- * Customizer Library Demo functions and definitions
- *
- * @package Customizer Library Demo
- */
-
-if ( file_exists ( get_template_directory() . '/inc/customizer-library/customizer-library.php' ) ) :
-// Helper library for the theme customizer.
-require get_template_directory() . '/inc/customizer-library/customizer-library.php';
-// Define custom setup for the theme customizer.
-require get_template_directory() . '/inc/customizer-setup.php';
-else :
-add_action( 'customizer-library-notices', 'squarely_customizer_library_notice' );
-endif;
-function squarely_customizer_library_notice() {
-  _e( '<p>Notice: The "customizer-library" sub-module is not loaded.</p><p>Please add it to the "inc" directory: <a href="https://github.com/devinsays/customizer-library">https://github.com/devinsays/customizer-library</a>.</p><p>The squarely, including submodules, can also be installed via Git: "git clone --recursive git@github.com:devinsays/customizer-library-squarely".</p>', 'squarely' );
-}
-
 $squarely_includes = [
   'lib/bootstrap-four-wp-navwalker.php',
   'lib/assets.php',    // Scripts and stylesheets
@@ -44,12 +26,12 @@ foreach ($squarely_includes as $file) {
 }
 unset($file, $filepath);
 
+//* Bootstrap Four Nav Classes
 function bootstrap_four_nav_li_class( $classes, $item ) {
   $classes[] .= ' nav-item-header' . ' nav-item';
   return $classes;
 }
 add_filter( 'nav_menu_css_class', 'bootstrap_four_nav_li_class', 10, 2 );
-
 
 function bootstrap_four_nav_anchor_class( $atts, $item, $args ) {
   $atts['class'] .= ' nav-link';
@@ -57,6 +39,8 @@ function bootstrap_four_nav_anchor_class( $atts, $item, $args ) {
 }
 add_filter( 'nav_menu_link_attributes', 'bootstrap_four_nav_anchor_class', 10, 3 );
 
+
+//* Bootstrap Four Comments
 function bootstrap_four_comment_form_before() {
   echo '<div class="double-divider"></div><div class="p-t-md"><div class="m-b-md">';
 }
@@ -94,6 +78,7 @@ function bootstrap_four_comment_form_after() {
 }
 add_action( 'comment_form_after', 'bootstrap_four_comment_form_after', 10, 5 );
 
+
 //* Enqueue Backstretch script
 add_action( 'wp_enqueue_scripts', 'enqueue_backstretch' );
 function enqueue_backstretch() {
@@ -112,26 +97,7 @@ function empty_content($str) {
     return trim(str_replace('&nbsp;','',strip_tags($str))) == '';
 }
 
+//* Live Composer Customizations
 require get_template_directory() . '/inc/composer-section-title.php';
 require get_template_directory() . '/inc/custom-composer.php';
 require get_template_directory() . '/inc/mod-composer.php';
-
-/**
- *TGM Plugin activation.
- */
-require get_template_directory() . '/tgmpa/class-tgm-plugin-activation.php';
- 
-add_action( 'tgmpa_register', 'squarely_recommend_plugin' );
-function squarely_recommend_plugin() {
- 
-    $plugins = array(
-        array(
-            'name'               => 'Live Composer Page Builder',
-            'slug'               => 'live-composer-page-builder',
-            'required'           => false,
-        ),       
-    );
- 
-    tgmpa( $plugins);
- 
-}
