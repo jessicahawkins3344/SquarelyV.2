@@ -1,4 +1,3 @@
-
 <?php if (!have_posts()) : ?>
 	<div class="m-t-lg">
 	  <div class="card card-block bg-warning c-white p-a text-xs-center">

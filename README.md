@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
-Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap, that will help you make better themes.
+Squarely is a WordPress Bootstrap 4 Theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap 4 that was built off the fantastic Sage starter theme.
 
 * Source: [https://github.com/roots/sage](https://github.com/roots/sage)
 * Homepage: [https://roots.io/sage/](https://roots.io/sage/)
@@ -28,7 +28,7 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 * [BrowserSync](http://www.browsersync.io/) for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
 * [Bower](http://bower.io/) for front-end package management
 * [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
-* [Bootstrap](http://getbootstrap.com/)
+* [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
 * [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
 * [HTML5 Boilerplate](http://html5boilerplate.com/)
   * The latest [jQuery](http://jquery.com/) via Google CDN, with a local fallback
@@ -46,23 +46,11 @@ Install the [Soil](https://github.com/roots/soil) plugin to enable additional fe
 
 ## Installation
 
-Clone the git repo - `git clone https://github.com/roots/sage.git` and then rename the directory to the name of your theme or website.
-
-If you don't use [Bedrock](https://github.com/roots/bedrock), you'll need to add the following to your `wp-config.php` on your development installation:
-
-```php
-define('WP_ENV', 'development');
-```
-
-## Configuration
-
-Edit `lib/config.php` to enable or disable theme features
-
-Edit `lib/init.php` to setup navigation menus, post thumbnail sizes, post formats, and sidebars.
+Clone the git repo - `git clone https://github.com/roots/sage.git` in your Bedrock themes directory or your regular Wordpress installation theme directory.
 
 ## Theme development
 
-Sage uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
+Square uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
 
 ### Install gulp and Bower
 
