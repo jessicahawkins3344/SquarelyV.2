@@ -29,7 +29,7 @@ use Squarely\Wrapper;
       </div>
     <?php endif; ?>
 
-    <div class="wrap ui-4 container-fluid">
+    <div class="wrapper ui-4 container-fluid">
       <div class="content row">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
