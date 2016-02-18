@@ -29,12 +29,20 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html, body {
+  height: auto!important;
+}
+
 img {
   image-rendering: -moz-pixelated;         /* Firefox */
         image-rendering:   -o-pixelated;         /* Opera */
         image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
         image-rendering: crisp-edges;
         -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+.admin-bar header#sticky {
+  margin-top: 32px!important;
 }
 
 ul{ list-style: none; padding: 0px; }
@@ -330,6 +338,12 @@ h4#comments {
 .double-divider {
   border-bottom: 3px double $gray-lighter;
   margin: 15px 0px;
+}
+
+[class*=" dslc-icon-"], [class^=dslc-icon-] {
+
+font-family: FontAwesome!important;
+
 }
 //
 // =feature

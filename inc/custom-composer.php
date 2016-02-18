@@ -5,7 +5,6 @@
  * @package Squarely
  */
 
-
 /**
  * Add icons to LC
  */

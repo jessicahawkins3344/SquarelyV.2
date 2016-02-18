@@ -10,6 +10,12 @@
     position: absolute;
 }
 
+@media (min-width: 768px) {
+#collapsingNavbar, #collapsingNavbarInverse {
+    display: block!important;
+}
+}
+
 .navbar-ct-primary{
     @include navbar-color($brand-primary);
 }

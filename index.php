@@ -1,8 +1,8 @@
 
 <?php if (!have_posts()) : ?>
 	<div class="m-t-lg">
-	  <div class="alert alert-warning">
-	    <?php _e('Sorry, no results were found.', 'squarely'); ?>
+	  <div class="card card-block bg-warning c-white p-a text-xs-center">
+	    <?php _e('Sorry, no results were found. Try searching again?', 'squarely'); ?>
 	  </div>
 	</div>
 <?php endif; ?>
