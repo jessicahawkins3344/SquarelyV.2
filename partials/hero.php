@@ -9,7 +9,7 @@
             echo 'thanks for saying hello to';
           } ?>
         </span>
-        <h1 class="m-t display-3 c-gray m-b-md"><strong>
+        <h1 class="m-t rt display-3 c-gray m-b-md"><strong>
           <?php if ( get_theme_mod( 'header-h1', false ) ) {
             echo get_theme_mod("header-h1");
           } else { 

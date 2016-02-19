@@ -101,3 +101,23 @@ function empty_content($str) {
 require get_template_directory() . '/inc/composer-section-title.php';
 require get_template_directory() . '/inc/custom-composer.php';
 require get_template_directory() . '/inc/mod-composer.php';
+
+/**
+ *TGM Plugin activation.
+ */
+require get_template_directory() . '/tgmpa/class-tgm-plugin-activation.php';
+ 
+add_action( 'tgmpa_register', 'squarely_recommend_plugin' );
+function squarely_recommend_plugin() {
+ 
+    $plugins = array(
+        array(
+            'name'               => 'Live Composer Page Builder',
+            'slug'               => 'live-composer-page-builder',
+            'required'           => false,
+        ),       
+    );
+ 
+    tgmpa( $plugins);
+ 
+}
