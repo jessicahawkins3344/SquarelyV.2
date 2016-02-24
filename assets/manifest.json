@@ -3,7 +3,6 @@
     "main.js": {
       "main": true,
       "vendor": [
-        "assets/scripts/plugins/isotope.pkgd.js",
         "assets/scripts/plugins/template.js"
       ],
       "files": [
@@ -23,9 +22,6 @@
         "styles/main.scss"
       ],
       "main": true
-    },
-    "ihover.css": {
-      "bower": ["ihover"]
     },
     "jquery.backstretch.js": {
       "bower": ["jquery-backstretch"]

@@ -12,5 +12,6 @@
     <link rel="alternate" type="application/rss+xml" title="<?= get_bloginfo('name'); ?> Feed" href="<?= esc_url(get_feed_link()); ?>">
     <link href="https://file.myfontastic.com/tJWvc9oygTjgZbPMueorGB/icons.css" rel="stylesheet">
     <link href="https://file.myfontastic.com/9pEvXQ4uno2QRzbDGUdVv7/icons.css" rel="stylesheet">
+    <link href="https://file.myfontastic.com/h9rqXMCT937pX28cbJiy6A/icons.css" rel="stylesheet">
     <?php wp_head(); ?>
   </head>

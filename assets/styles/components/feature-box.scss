@@ -245,9 +245,8 @@
 
 .feature-box.fbox-center .fbox-icon {
     position: relative;
-    width: 96px;
-    height: 96px;
-    margin: 0 auto 30px
+    width: auto;
+    margin: 0 auto;
 }
 
 .feature-box.fbox-center .fbox-icon i {
@@ -581,4 +580,9 @@
 
 .feature-box.media-box.fbox-bg .fbox-media img {
     border-radius: 5px 5px 0 0
+}
+
+.fbox-service-img {
+    width: 96px!important;
+    margin: 0 auto!important;
 }

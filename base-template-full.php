@@ -19,7 +19,7 @@ use Squarely\Wrapper;
       get_template_part('templates/header');
     ?>
     </div>
-      <div class="wrapper" role="document" style="margin-top: 95px;">
+      <div class="wrapper" role="document" style="margin-top: 55px;">
           <main>
             <?php include Wrapper\template_path(); ?>
           </main><!-- /.main -->

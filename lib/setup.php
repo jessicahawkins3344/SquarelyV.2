@@ -93,7 +93,8 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
-    is_page_template('template-full.php')
+    is_page_template('template-full.php'),
+    is_singular()
   ]);
 
   return apply_filters('squarely/display_sidebar', $display);

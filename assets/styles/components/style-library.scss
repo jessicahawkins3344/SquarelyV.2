@@ -350,9 +350,9 @@
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 .icon-hi {
-    font-size: 120px;
-    font-color: $gray-dark;
-    line-height: 1.3em;
+    font-size: 120px!important;
+    font-color: $brand-success;
+    line-height: 1em;
     margin: 5px;
 }
 

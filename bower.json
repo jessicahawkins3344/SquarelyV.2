@@ -17,7 +17,6 @@
     "jquery.placeholder": "^0.2.4",
     "colorpicker": "jquery.colorpicker#^1.1.7",
     "repeatable-fields": "^1.4.8",
-    "ihover": "^1.0.0",
     "FitText.js": "^1.2.0"
   },
   "overrides": {
@@ -29,11 +28,6 @@
     "bootstrap": {
       "main": [
         "./scss/bootstrap.scss"
-      ]
-    },
-    "ihover": {
-      "main": [
-        "./src/ihover.css"
       ]
     }
   }

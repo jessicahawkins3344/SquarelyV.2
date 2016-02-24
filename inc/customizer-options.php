@@ -62,6 +62,13 @@ function customizer_library_squarely_options() {
 		'priority' => '0'
 	);
 
+	$section = 'social';
+	$sections[] = array(
+		'id' => $section,
+		'title' => __( 'Social', 'squarely' ),
+		'priority' => '0'
+	);
+
 	$section = 'footer';
 	$sections[] = array(
 		'id' => $section,
@@ -104,14 +111,38 @@ function customizer_library_squarely_options() {
 
 
 	/*/////////////////////////////////
-	/* Options - Footer
+	/* Options - Social
 	/*/////////////////////////////////
+
+	$options['c-facebook'] = array(
+	    'id' => 'c-facebook',
+	    'label'   => __( 'Include Facebook Profile', 'textdomain' ),
+	    'section' => 'social',
+	    'type'    => 'checkbox',
+	    'default' => 0,
+	);
+
+	$options['c-twitter'] = array(
+	    'id' => 'c-twitter',
+	    'label'   => __( 'Include Twitter Profile', 'textdomain' ),
+	    'section' => 'social',
+	    'type'    => 'checkbox',
+	    'default' => 0,
+	);
+
+	$options['c-google'] = array(
+	    'id' => 'c-google',
+	    'label'   => __( 'Include Google+ Profile', 'textdomain' ),
+	    'section' => 'social',
+	    'type'    => 'checkbox',
+	    'default' => 0,
+	);
 
 	$options['f-facebook'] = array(
 		'id' => 'f-facebook',
 		'label'   => __( 'Facebook URL', 'squarely' ),
 		'description' => __( 'Your Facebook URL starting with "http://"...' , 'squarely' ), // @TODO Put a helper here
-		'section' => 'footer',
+		'section' => 'social',
 		'type'    => 'url',
 	);
 
@@ -119,7 +150,7 @@ function customizer_library_squarely_options() {
 		'id' => 'f-twitter',
 		'label'   => __( 'Twitter URL', 'squarely' ),
 		'description' => __( 'Your Twitter URL starting with "http://"...' , 'squarely' ), // @TODO Put a helper here
-		'section' => 'footer',
+		'section' => 'social',
 		'type'    => 'url',
 	);
 
@@ -127,7 +158,7 @@ function customizer_library_squarely_options() {
 		'id' => 'f-google',
 		'label'   => __( 'Google Plus URL', 'squarely' ),
 		'description' => __( 'Your Plus URL starting with "http://"...' , 'squarely' ), // @TODO Put a helper here
-		'section' => 'footer',
+		'section' => 'social',
 		'type'    => 'url',
 	);
 
@@ -135,7 +166,7 @@ function customizer_library_squarely_options() {
 		'id' => 'f-linkedin',
 		'label'   => __( 'LinkedIn URL', 'squarely' ),
 		'description' => __( 'Your LinkedIn URL starting with "http://"...' , 'squarely' ), // @TODO Put a helper here
-		'section' => 'footer',
+		'section' => 'social',
 		'type'    => 'url',
 	);
 
@@ -143,7 +174,7 @@ function customizer_library_squarely_options() {
 		'id' => 'f-youtube',
 		'label'   => __( 'YouTube URL', 'squarely' ),
 		'description' => __( 'Your YouTube Channel URL starting with "http://"...' , 'squarely' ), // @TODO Put a helper here
-		'section' => 'footer',
+		'section' => 'social',
 		'type'    => 'url',
 	);
 
@@ -151,9 +182,13 @@ function customizer_library_squarely_options() {
 		'id' => 'f-rss',
 		'label'   => __( 'RSS URL', 'squarely' ),
 		'description' => __( 'Your RSS URL starting with "http://"...' , 'squarely' ), // @TODO Put a helper here
-		'section' => 'footer',
+		'section' => 'social',
 		'type'    => 'url',
 	);
+
+	/*/////////////////////////////////
+	/* Options - Footer
+	/*/////////////////////////////////
 
 	$options['f-copyright'] = array(
 		'id' => 'f-copyright',

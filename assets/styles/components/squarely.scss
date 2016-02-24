@@ -33,6 +33,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.admin-bar nav#sticky {
+margin-top: 32px!important;
+}
+
 html, body {
   height: auto!important;
 }
@@ -451,9 +455,9 @@ img.phone-portrait{ max-height: 580px; }
 .store-link img{ height: 50px; }
 
 .feature-icon-left{ overflow: hidden; margin-bottom: 40px; float: left; }
-.feature-icon-left .icon-holder{ width: 45px; float: left; }
-.feature-icon-left i{ font-size: 32px; }
-.feature-icon-left .feature-text{ width: 217px; float: left; padding-top: 8px; }
+.feature-icon-left .icon-holder{ width: 70px; float: left; }
+.feature-icon-left i{ font-size: 60px; }
+.feature-icon-left .feature-text{ float: left; padding-top: 17px;}
 
 .feature-box{ padding: 64px 40px; position: relative; z-index: 1; overflow: hidden; margin-bottom: 30px; }
 .feature-box .background-image-holder{ z-index: 0; left: 0; }
@@ -493,6 +497,19 @@ img.phone-portrait{ max-height: 580px; }
 
 .wood-divider .product-image{ top: 22%; transform: rotate(-15deg); right: -100px; }
 
+.carousel-control.right {
+  background-image: none!important;
+}
+.carousel-control.left {
+  background-image: none!important;
+}
+
+.carousel-indicators .active {
+  background-color: #fff!important;
+}
+.carousel-indicators {
+  margin-left: -30%!important;
+}
 //
 // =Video
 // --------------------------------------------------
