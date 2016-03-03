@@ -21,7 +21,7 @@ $main_nav_options = array(
         </div>
         <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
           <?php if ( get_theme_mod( 'logo', false ) ) {
-            echo '<img src="' . esc_url( get_theme_mod( 'logo' ) ) . '" style="width: 250px;">';
+            echo '<img src="' . esc_url( get_theme_mod( 'logo' ) ) . '" style="width: 250px; padding: 18px 0px!important;" class="crisp">';
           } else { ?>
             <?php bloginfo('name'); ?>
           <?php } ?>

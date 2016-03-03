@@ -52,4 +52,3 @@
 	    </div>
 	</footer>
 </section>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>

@@ -114,6 +114,7 @@ function assets() {
 
   wp_enqueue_script('jquery', Assets\asset_path('scripts/jquery.js'), [], null, true);
   wp_enqueue_script('modernizr', Assets\asset_path('scripts/modernizr.js'), [], null, true);
+    wp_enqueue_script('bootstrap4', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js', ['jquery'], null, true);
   wp_enqueue_script('squarely/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
