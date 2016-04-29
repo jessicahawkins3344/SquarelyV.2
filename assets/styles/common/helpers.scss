@@ -1,0 +1,202 @@
+/*
+ * => TEXT AND BG CLASSES
+ * ---------------------------------------------------------------------------*/
+// Text Colors
+@mixin text-color($name, $value) {
+	.text-#{$name} {
+		color: $value;
+		p,
+		h1, .h1,
+		h2, .h2,
+		h3, .h3,
+		h4, .h4,
+		h5, .h5,
+		h6, .h6 {
+			color: $value;
+		}
+	}
+}
+
+// Background Colors
+@mixin bg-color($name, $value) {
+	.bg-#{$name} {
+		background-color: $value;
+	}
+}
+
+// build .text-color and .bg-color classes
+@each $name, $value in $mainColors {
+  @include text-color($name, $value);
+  @include bg-color($name, $value);
+}
+
+/*
+ * => FIXES FOR FIREFOX
+ * ---------------------------------------------------------------------------*/
+
+@-moz-document url-prefix() {  
+  img.foxfix,
+  .foxfix > img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {    
+  img.foxfix,
+  .foxfix > img {
+    max-width: 100%;
+  }    
+}
+
+
+
+
+/*
+ * => HELPER CLASSES
+ * ---------------------------------------------------------------------------*/
+
+
+// Margins
+
+.margin-top-0    { margin-top: 0; }
+.margin-bottom-0 { margin-bottom: 0; }
+.margin-0        { margin: 0; }
+
+// lines (aka lines under headings)... <div class=line></div>
+
+.line {
+	border-bottom: 2px solid #444; 
+	max-width: 100%;
+	margin: auto;
+
+	&.small {
+		width: 500px;
+	}
+
+	&.medium {
+		width: 950px;
+	}
+
+	&.white {
+		border-color: #fff;
+	}
+}
+
+// Vertical Align Elements
+// add this to the parent element, and set a specific height for parent element
+.valign-middle,
+.vertical-middle,
+.vertical-center {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+// Bounce things
+.bounce {
+	animation: bounce 1s 2s infinite ease-in-out;
+	position: relative;
+}
+.bounce-hover:hover {
+	animation: bounce 1s 2s infinite ease-in-out;
+	position: relative;
+}
+@keyframes bounce {
+	0%   { top: 0; }
+	40%  {}
+	50%  { top: 10px; }
+	55%  { top: 20px; }
+	65%  { top: 10px; }
+	95%  { top: 0; }
+	100% { top: 0; }
+}
+
+
+// Tilt things
+.tilt {
+  transition: all .2s ease-in-out;
+}
+.tilt:hover {
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+}
+
+
+// Grow things
+.grow { 
+	transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+	-ms-transform: scale(1.1); 
+	-webkit-transform: scale(1.1); 
+	transform: scale(1.1); 
+}
+
+// Hover effect for block elements
+.hover-effect:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+/*
+ * => MOBILE HELPERS & FIXES
+ * ---------------------------------------------------------------------------*/
+
+// iPad (portrait and smaller)
+@include media('<tablet') {
+
+	.mobile-block {
+		display: block;
+		margin: 1em auto !important;
+		float: none !important;
+		width: 90%;
+	}
+
+}
+
+// Phones (portrait)
+@include media('<phone') {
+
+	.mobile-wide {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		margin: 0 auto !important;
+	}
+	.mobile-center {
+		text-align: center !important;
+	}
+	.mobile-left {
+		text-align: left !important;
+	}
+
+	// Feature Box Elements
+	.x-feature-box-graphic {
+		display: block !important;
+		width: 45px;
+		margin: 1em auto;
+	}
+	.x-feature-box-content {
+		text-align: center;
+	}
+
+	.mobile-hide {
+		display: none !important;
+	}
+
+}
+
+/*
+ * => LayerSlider Mods and Fixes
+ * ---------------------------------------------------------------------------*/
+
+// Fix button transitions in layerslider
+.ls-container .x-btn {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}

@@ -7,6 +7,10 @@ $icon-font-path: '../fonts/';
 @import "../../bower_components/weather-icons/sass/weather-icons.scss";
 // endbower
 
+@import "../../bower_components/include-media/dist/_include-media.scss";
+
+@import "common/globals.scss";
+@import "common/helpers.scss";
 @import "components/md-pallet.scss";
 @import "components/style-library.scss";
 @import "components/utilities.scss";
