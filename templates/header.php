@@ -10,15 +10,16 @@ $main_nav_options = array(
 );
 ?>
 
-<?php if ( has_nav_menu( 'primary_navigation' ) ) : ?>
   <header id="sticky" class="site-header navbar navbar-custom bg-white navbar-fixed-top">
     <div class="container-fluid" style="padding-right: 9%; padding-left:9%;">
         <button class="c-primary text-primary navbar-toggler hidden-md-up pull-xs-right c-primary" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-expanded="false">
             ☰
         </button>
-        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+        <?php if ( has_nav_menu( 'primary_navigation' ) ) : ?>
+          <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
           <?php wp_nav_menu( $main_nav_options ); ?>
-        </div>
+          </div>
+        <?php endif; ?>
         <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
           <?php if ( get_theme_mod( 'logo', false ) ) {
             echo '<img src="' . esc_url( get_theme_mod( 'logo' ) ) . '" style="width: 250px; padding: 18px 0px!important;" class="crisp">';
@@ -28,4 +29,3 @@ $main_nav_options = array(
         </a>
     </div><!-- .container -->
   </header>
-<?php endif; ?>
