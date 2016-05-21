@@ -34,6 +34,6 @@
     }
   },
   "config": {
-    "devUrl": "http://gaphc.dev"
+    "devUrl": "http://yoursite.dev"
   }
 }
