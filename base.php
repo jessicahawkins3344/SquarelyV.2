@@ -29,24 +29,22 @@ use Squarely\Wrapper;
       </div>
     <?php endif; ?>
 
-    <div class="wrap ui-4 container-fluid">
+  <div class="wrapper container" role="document" style="margin-top: 110px; margin-bottom: 110px;">
       <div class="content row">
-        <main class="main">
-          <?php include Wrapper\template_path(); ?>
-        </main><!-- /.main -->
-        <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
+          <main class="main">
+            <?php include Wrapper\template_path(); ?>
+          </main><!-- /.main -->
+          <?php if (Setup\display_sidebar()) : ?>
+            <aside class="sidebar">
+              <?php include Wrapper\sidebar_path(); ?>
+            </aside><!-- /.sidebar -->
+          <?php endif; ?>
       </div><!-- /.content -->
     </div><!-- /.wrap -->
-
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');
       wp_footer();
     ?>
-    
   </body>
 </html>
