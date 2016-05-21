@@ -23,11 +23,6 @@ use Squarely\Wrapper;
           <main>
             <?php include Wrapper\template_path(); ?>
           </main><!-- /.main -->
-          <?php if (Setup\display_sidebar()) : ?>
-            <aside class="sidebar">
-              <?php include Wrapper\sidebar_path(); ?>
-            </aside><!-- /.sidebar -->
-          <?php endif; ?>
       </div><!-- /.wrap -->
     <?php
       do_action('get_footer');
