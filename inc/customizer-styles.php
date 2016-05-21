@@ -45,12 +45,6 @@ function customizer_library_squarely_build_styles() {
 				'border-color' => $color
 			)
 		) );
-	}
-
-	$setting = 'brand-primary-text';
-	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
-	if ( $mod !== customizer_library_get_default( $setting ) ) {
-		$color = sanitize_hex_color( $mod );
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.text-primary',
@@ -87,22 +81,18 @@ function customizer_library_squarely_build_styles() {
 				'border' => $color
 			)
 		) );
-	}
-
-	// Secondary Color
-	$setting = 'brand-secondary-text';
-	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
-	if ( $mod !== customizer_library_get_default( $setting ) ) {
 		$color = sanitize_hex_color( $mod );
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.secondary'
 			),
 			'declarations' => array(
-				'color' => $color
+				'color' => $color,
+				'border' => $color
 			)
 		) );
 	}
+
 
 	// Success Color
 	$setting = 'brand-success';
@@ -121,13 +111,6 @@ function customizer_library_squarely_build_styles() {
 				'border-color' => $color
 			)
 		) );
-	}
-
-	// Success Color
-	$setting = 'brand-success-text';
-	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
-	if ( $mod !== customizer_library_get_default( $setting ) ) {
-		$color = sanitize_hex_color( $mod );
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.c-success',
@@ -142,6 +125,7 @@ function customizer_library_squarely_build_styles() {
 			)
 		) );
 	}
+
 
 	// Success Color
 	$setting = 'brand-info';
@@ -160,13 +144,6 @@ function customizer_library_squarely_build_styles() {
 				'border-color' => $color
 			)
 		) );
-	}
-
-	// Success Color
-	$setting = 'brand-info-text';
-	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
-	if ( $mod !== customizer_library_get_default( $setting ) ) {
-		$color = sanitize_hex_color( $mod );
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.c-info',

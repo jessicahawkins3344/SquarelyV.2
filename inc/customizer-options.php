@@ -380,16 +380,7 @@ function customizer_library_squarely_options() {
 	$options['brand-primary'] = array(
 		'id' => 'brand-primary',
 		'label'   => __( 'Brand Primary', 'squarely' ),
-		'description' => __( 'Filled Buttons, Icons, and elements using the ".primary-bg" class' , 'squarely' ), // @TODO Put a helper here
-		'section' => 'colors_type',
-		'type'    => 'color',
-		'default' => $brand_primary,
-	);
-
-	$options['brand-primary-text'] = array(
-		'id' => 'brand-primary-text',
-		'label'   => __( 'Brand Primary Text', 'squarely' ),
-		'description' => __( 'Button & Icon Outlines, Links, and Type using the ".c-primary" class' , 'squarely' ), // @TODO Put a helper here
+		'description' => __( 'Filled Buttons, Icons, and elements using the ".primary-bg or .brand-primary" class' , 'squarely' ), // @TODO Put a helper here
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_primary,
@@ -398,16 +389,7 @@ function customizer_library_squarely_options() {
 	$options['brand-secondary'] = array(
 		'id' => 'brand-secondary',
 		'label'   => __( 'Brand Secondary', 'squarely' ),
-		'description' => __( 'Filled Buttons, Icons, and elements using the ".secondary-bg" class' , 'squarely' ), // @TODO Put a helper here
-		'section' => 'colors_type',
-		'type'    => 'color',
-		'default' => $brand_secondary,
-	);
-
-	$options['brand-secondary-text'] = array(
-		'id' => 'brand-secondary-text',
-		'label'   => __( 'Secondary Type, Outline Btns, & Icons', 'squarely' ),
-		'description' => __( 'Button & Icon Outlines, Links, and Type using the ".c-secondary" class' , 'squarely' ), // @TODO Put a helper here
+		'description' => __( 'Filled Buttons, Icons, and elements using the ".secondary-bg or .brand-secondary" class' , 'squarely' ), // @TODO Put a helper here
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_secondary,
@@ -416,16 +398,7 @@ function customizer_library_squarely_options() {
 	$options['brand-success'] = array(
 		'id' => 'brand-success',
 		'label'   => __( 'Brand Success', 'squarely' ),
-		'description' => __( 'Filled Buttons, Icons, and elements using the ".success-bg" class' , 'squarely' ), // @TODO Put a helper here
-		'section' => 'colors_type',
-		'type'    => 'color',
-		'default' => $brand_success,
-	);
-
-	$options['brand-success-text'] = array(
-		'id' => 'brand-success-text',
-		'label'   => __( 'Success Type, Outline Btns, & Icons', 'squarely' ),
-		'description' => __( 'Button & Icon Outlines, Links, and Type using the ".c-success" class' , 'squarely' ), // @TODO Put a helper here
+		'description' => __( 'Filled Buttons, Icons, and elements using the ".success-bg or .brand-success" class' , 'squarely' ), // @TODO Put a helper here
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_success,
@@ -434,21 +407,11 @@ function customizer_library_squarely_options() {
 	$options['brand-info'] = array(
 		'id' => 'brand-info',
 		'label'   => __( 'Brand Info', 'squarely' ),
-		'description' => __( 'Filled Buttons, Icons, and elements using the ".info-bg" class' , 'squarely' ), // @TODO Put a helper here
+		'description' => __( 'Filled Buttons, Icons, and elements using the ".info-bg or .brand-info" class' , 'squarely' ), // @TODO Put a helper here
 		'section' => 'colors_type',
 		'type'    => 'color',
 		'default' => $brand_info,
 	);
-
-	$options['brand-info-text'] = array(
-		'id' => 'brand-info-text',
-		'label'   => __( 'Info Type, Outline Btns, & Icons', 'squarely' ),
-		'description' => __( 'Button & Icon Outlines, Links, and Type using the ".c-info" class' , 'squarely' ), // @TODO Put a helper here
-		'section' => 'colors_type',
-		'type'    => 'color',
-		'default' => $brand_info,
-	);
-
 	
 
 	// Adds the sections to the $options array
