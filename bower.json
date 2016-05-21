@@ -17,7 +17,8 @@
     "jquery.placeholder": "^0.2.4",
     "colorpicker": "jquery.colorpicker#^1.1.7",
     "repeatable-fields": "^1.4.8",
-    "FitText.js": "^1.2.0"
+    "FitText.js": "^1.2.0",
+    "include-media": "^1.4.4"
   },
   "overrides": {
     "modernizr": {
