@@ -8,17 +8,9 @@
   "dependencies": {
     "animate.css": "3.4.0",
     "bootstrap": "v4.0.0-alpha.2",
-    "weather-icons": "~2.0.10",
     "modernizr": "~2.8.2",
-    "bootstrap-progressbar": "~0.9.0",
     "tether": "~1.1.1",
-    "wow": "WOW#~1.1.2",
-    "jquery-backstretch": "~2.0.4",
-    "jquery.placeholder": "^0.2.4",
-    "colorpicker": "jquery.colorpicker#^1.1.7",
-    "repeatable-fields": "^1.4.8",
-    "FitText.js": "^1.2.0",
-    "include-media": "^1.4.4"
+    "jquery-backstretch": "~2.0.4"
   },
   "overrides": {
     "modernizr": {
