@@ -10,7 +10,9 @@
     "bootstrap": "v4.0.0-alpha.2",
     "modernizr": "~2.8.2",
     "tether": "~1.1.1",
-    "jquery-backstretch": "~2.0.4"
+    "wow": "WOW#~1.1.2",
+    "jquery-backstretch": "~2.0.4",
+    "include-media": "^1.4.4"
   },
   "overrides": {
     "modernizr": {
